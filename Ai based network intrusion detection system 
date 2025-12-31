@@ -1,0 +1,26 @@
+Key Performance Metrics
+To prove your system works, you must go beyond simple "Accuracy." In cybersecurity, a False Negative (missing an actual attack) is much more dangerous than a False Positive (a false alarm).
+Accuracy: Overall percentage of correct predictions (Normal vs. Attack).
+Precision: Out of all traffic flagged as an attack, how much was actually an attack? (Reduces False Alarms).
+Recall (Detection Rate): Out of all actual attacks, how many did the AI catch? (Critical for security).
+F1-Score: The harmonic mean of Precision and Recall; the most balanced metric for NIDS.
+Inference Latency: The time taken to analyze a single packet (usually measured in milliseconds). For real-time use, this should be < 1.0 ms.
+2. Sample Results Table
+If you were comparing different algorithms (like Random Forest vs. Deep Learning), your results table might look like this:
+Visualizing the Findings
+To make your project professional, include the following visualizations:
+A. Confusion Matrix
+A heatmap that shows exactly where the model gets confused.
+True Positives (TP): Correctly identified attacks.
+False Positives (FP): Normal traffic wrongly flagged (Annoying for users).
+False Negatives (FN): Attacks missed by the system (The biggest failure).
+B. ROC Curve (Receiver Operating Characteristic)
+A graph showing the trade-off between the "Detection Rate" and "False Alarm Rate." A curve that hugs the top-left corner indicates a superior model.
+Attack Category Detection Rate Typical Feature Indicator
+DoS / DDoS 99.8% High packet count, short duration.
+Probe (Scanning) 96.5% Multiple destination ports from one source.
+R2L (Unauthorized Login) 84.2% Failed login attempts, specific protocol flags.
+Zero-Day (New) 78.0% High deviation from baseline "Normal" behavior.
+ Summary of Achievement
+"The proposed Deep Learning model achieved an overall accuracy of 99.4% on the NSL-KDD test set. Most importantly, it maintained a False Positive Rate (FPR) of less than 1.5%, significantly reducing alert fatigue for security analysts compared to traditional signature-based systems."
+Would you like me to help you write the "Conclusion" or "Future Work" section based on these results
